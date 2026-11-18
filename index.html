@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Superday Prep</title>
+<meta name="description" content="An interactive finance interview course: accounting, valuation, DCF, M&A, LBOs, credit, markets and behavioral prep, with models, quizzes, flashcards and mock interviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Schibsted+Grotesk:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231b3fa0'/%3E%3Cpath d='M8 22l5-6 4 3 7-9' fill='none' stroke='%23ffe27a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="shell" id="shell">
+  <header class="topbar">
+    <button class="icon-btn menu" id="menu-btn" type="button" aria-label="Open navigation">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <a class="brand" href="#home" aria-label="Superday Prep home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="var(--accent)"/><path d="M8 22l5-6 4 3 7-9" fill="none" stroke="var(--hl-solid)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="brand-name">Superday<span>Prep</span></span>
+    </a>
+    <button class="search-trigger" id="search-btn" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>Search the course</span><kbd>/</kbd>
+    </button>
+    <button class="icon-btn" id="theme-btn" type="button" aria-label="Toggle light and dark theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+  </header>
+  <aside class="sidebar" aria-label="Course navigation"><nav id="nav"></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <main id="view" class="main" tabindex="-1"></main>
+</div>
+
+<div class="search-dlg" id="search" hidden role="dialog" aria-modal="true" aria-label="Search">
+  <div class="search-box">
+    <input id="search-input" type="search" placeholder="Search lessons, tools, terms, questions…" autocomplete="off" aria-label="Search">
+    <div id="search-results" class="search-results"></div>
+    <div class="search-foot"><span><kbd>↑</kbd><kbd>↓</kbd> to move</span><span><kbd>Enter</kbd> to open</span><span><kbd>Esc</kbd> to close</span></div>
+  </div>
+</div>
+
+<script src="assets/js/content-1.js"></script>
+<script src="assets/js/content-2.js"></script>
+<script src="assets/js/content-3.js"></script>
+<script src="assets/js/content-4.js"></script>
+<script src="assets/js/tools.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
